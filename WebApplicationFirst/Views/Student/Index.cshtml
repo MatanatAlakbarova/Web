@@ -1,0 +1,13 @@
+﻿@using WebApplicationFirst.Models
+
+@{
+    List<Student> students = Model;
+}
+
+@foreach (var item in students)
+{
+    @if (item.Age > 26)
+    {
+        <h1>@item</h1>
+    }
+}
